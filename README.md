@@ -92,7 +92,7 @@ This dataset contains 17,000+ instances with 28 features. The features can be gr
 │   ├── 07. model-comparison-summary.py
 ├── requirements.txt
 └── requirements_pypi.txt
-
+```
 ---
 
 ## How to run the project locally
