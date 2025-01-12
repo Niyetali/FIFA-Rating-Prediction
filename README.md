@@ -74,7 +74,7 @@ This dataset contains 17,000+ instances with 28 features. The features can be gr
 ├── README.md
 ├── data
 │   ├── input
-│   └── output
+│── output
 ├── notebooks
 │   ├── 01. data-preparation-and-eda.ipynb
 │   ├── 02. feature-engineering.ipynb
