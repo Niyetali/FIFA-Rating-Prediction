@@ -73,11 +73,10 @@ This dataset contains 17,000+ instances with 28 features. The features can be gr
 ```plaintext
 ├── README.md
 ├── data
-│   ├── input               # Raw data files
-│   ├── processed           # Preprocessed data
-│   └── models_output       # Model predictions and metrics
-├── models                  # Scripts for model training and evaluation
-├── notebooks               # Exploratory and modeling notebooks
+│   ├── input
+│   └── output
+├── models
+├── notebooks
 │   ├── 01. data-preparation-and-eda.ipynb
 │   ├── 02. feature-engineering.ipynb
 │   ├── 03. baseline-ols.ipynb
@@ -85,6 +84,57 @@ This dataset contains 17,000+ instances with 28 features. The features can be gr
 │   ├── 05. xgboost-model.ipynb
 │   ├── 06. mlp-model.ipynb
 │   ├── 07. model-comparison-summary.ipynb
-├── requirements.txt        # Conda environment dependencies
-└── requirements_pypi.txt   # Additional pip dependencies
+├── requirements.txt
+└── requirements_pypi.txt
 
+---
+
+## How to run the project locally
+
+1. Install conda environment management system: [https://conda.io/projects/conda/en/latest/user-guide/install/index.html](https://conda.io/projects/conda/en/latest/user-guide/install/index.html)
+
+2. Create conda environment using provided requirements.txt files (paste the following commands in Anaconda Prompt or Terminal):
+
+   2.0 Navigate in Anaconda Prompt (Windows) or Terminal (macOS/Linux) into the project directory, for instance:  
+
+   **On Windows:**  
+   ```bash
+   cd C:\Users\YourUsername\Documents\MyProject
+   ```
+   **On macOS:**
+   ```bash
+   cd /Users/YourUsername/Documents/MyProject
+   ```
+   **On Linux:**
+   ```bash
+   cd /home/YourUsername/MyProject
+   ```
+   Then run the following commands:
+   
+   2.1. `conda config --append channels conda-forge`
+
+   2.2. `conda create --name xxxx_env --file requirements.txt`
+
+   2.3. `conda activate xxxx_env`
+
+   2.4. `pip install -r requirements_pypi.txt`
+
+  Run the project (using your xxxx_env) in your favorite IDE which supports notebooks for instance in Jupyter Notebook, for instance run in Anaconda Prompt:
+
+  3.1 `conda activate xxxx_env`
+
+  3.2 `jupyter notebook`
+
+  # How to run the project remotely
+
+  1. **Clone the Repository**
+     Copy the URL of this GitHub project.
+
+  2. **Open in a Web-Based IDE**
+     Replace github.com in the URL with github.dev to open the project in GitHub's web-based IDE.
+
+  # **Notes**
+
+  - Replace `xxxx_env` with the name of your environment (e.g., `fifa_env` or `my_project_env`).
+  - Ensure Conda is correctly installed and accessible in your system’s PATH.
+  - The `requirements.txt` file should include Conda-specific dependencies, while `requirements_pypi.txt` should handle pip-only dependencies.
