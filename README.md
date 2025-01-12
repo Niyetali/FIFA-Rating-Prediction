@@ -72,8 +72,7 @@ This dataset contains 17,000+ instances with 28 features. The features can be gr
 ## **Project Structure**
 ```plaintext
 ├── README.md
-├── data
-│   ├── input
+├── input
 │── output
 ├── notebooks
 │   ├── 01. data-preparation-and-eda.ipynb
