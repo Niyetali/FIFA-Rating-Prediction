@@ -43,7 +43,7 @@ This dataset contains 17,000+ instances with 28 features. The features can be gr
 
 ### **Club and Contract Information**
 - **Club**: Current club affiliation (categorical).
-- **Contract Valid Until**: Year of contract expiration (numeric).
+- **Contract Valid Until**: Year of contract expiration.
 - **Release Clause**: Value of the release clause (numeric).
 
 ### **Financial Information**
