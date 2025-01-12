@@ -74,9 +74,7 @@ This dataset contains 17,000+ instances with 28 features. The features can be gr
 ├── README.md
 ├── data
 │   ├── input
-│   ├── scripts
 │   └── output
-├── models
 ├── notebooks
 │   ├── 01. data-preparation-and-eda.ipynb
 │   ├── 02. feature-engineering.ipynb
@@ -85,6 +83,14 @@ This dataset contains 17,000+ instances with 28 features. The features can be gr
 │   ├── 05. xgboost-model.ipynb
 │   ├── 06. mlp-model.ipynb
 │   ├── 07. model-comparison-summary.ipynb
+├── scripts
+│   ├── 01. data-preparation-and-eda.py
+│   ├── 02. feature-engineering.py
+│   ├── 03. baseline-ols.py
+│   ├── 04. adaboost-model.py
+│   ├── 05. xgboost-model.py
+│   ├── 06. mlp-model.py
+│   ├── 07. model-comparison-summary.py
 ├── requirements.txt
 └── requirements_pypi.txt
 
